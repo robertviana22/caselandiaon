@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Caselândia - Fidelidade</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Caselândia - Fidelidade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Bem-vindo à Caselândia</h1>
+    <p>Cadastre-se no nosso programa de fidelidade e acompanhe seus serviços!</p>
+
+    <form action="/registrar_fidelidade" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required><br>
+        <input type="text" name="contato" placeholder="Telefone ou Email" required><br>
+        <input type="text" name="servico" placeholder="Qual serviço ou produto?" required><br>
+        <button type="submit">Cadastrar e falar com WhatsApp</button>
+    </form>
+</body>
+</html>

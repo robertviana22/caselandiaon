@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Presença</title>
+</head>
+<body>
+    <h1>Evento Especial</h1>
+    <img src="/static/evento.jpg" alt="Imagem do Evento" width="300">
+
+    <p>Data: 20/06/2025 — Local: Centro de Eventos</p>
+    <h2>Confirme sua presença</h2>
+    <form action="/registrar" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required><br>
+        <input type="text" name="contato" placeholder="Telefone ou Email" required><br>
+        <button type="submit">Confirmar Presença</button>
+    </form>
+</body>
+</html>
