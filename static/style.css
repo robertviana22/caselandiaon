@@ -2,13 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f45d37;
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 220px;
-    background-attachment: fixed;
-    min-height: 100vh;
+  background-color: #f45d37;
+background-image: none;
+
 
     display: flex;
     justify-content: center;
