@@ -21,13 +21,17 @@ def registrar_fidelidade():
     contato = request.form['contato']
     servico = request.form['servico']
 
-    # Grava os dados em um arquivo CSV
+    # Salva os dados no CSV
     with open('fidelidade.csv', 'a', newline='', encoding='utf-8') as arquivo:
         writer = csv.writer(arquivo)
         writer.writerow([nome, contato, servico])
 
-    # Redireciona para o WhatsApp após cadastro
-    return redirect('https://wa.me/5579991763141?text=Cadastro+realizado+com+sucesso%21')
+    # Monta a mensagem para o WhatsApp
+    mensagem = f"Olá! Meu nome é {nome} e acabei de me cadastrar.\nServiço ou produto: {servico}"
+
+    # Redireciona para o WhatsApp com a mensagem preenchida
+    return redirect(f"https://wa.me/5579991763141?text={mensagem.replace(' ', '+')}")
+
 
 # Inicializa o servidor Flask na porta fornecida pelo Render
 if __name__ == '__main__':
