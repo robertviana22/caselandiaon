@@ -103,4 +103,24 @@ button:hover {
     font-size: 1.2em;
     color: #f45d37;
 }
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    margin-top: 40px;
+    border-top: 3px solid #f45d37;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+footer a {
+    color: #25d366;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
