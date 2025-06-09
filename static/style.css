@@ -1,4 +1,5 @@
 /* Fonte personalizada */
+/* Fonte personalizada */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -7,6 +8,12 @@ body {
     padding: 0;
     background-color: #f45d37;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -62,10 +69,11 @@ button:hover {
 /* Footer */
 .footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 0.9em;
+    padding: 20px;
     color: #fff;
+    font-size: 0.9em;
+    background: none;
+    margin-top: auto;
 }
 
 .footer a {
@@ -73,51 +81,8 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Animação de entrada */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Media queries para tablets e celulares */
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 40px auto;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 0.95em;
-    }
-
-    input, button {
-        font-size: 0.95em;
-    }
-}
-
+/* Responsivo */
 @media (max-width: 480px) {
-    .container {
-        padding: 15px;
-        margin: 30px auto;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    p {
-        font-size: 0.9em;
-    }
-
-    input, button {
-        font-size: 0.9em;
-        padding: 10px;
-    }
-
     .footer {
         font-size: 0.8em;
     }
