@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">
+    <div class="topo-logo">
+    <img src="{{ url_for('static', filename='logo_topo.png') }}" alt="Logo Caselândia">
+</div>
         <h1>Bem-vindo à Caselândia</h1>
         <p>Cadastre-se no nosso programa de fidelidade e acompanhe seus serviços!</p>
         <form action="/registrar_fidelidade" method="POST">

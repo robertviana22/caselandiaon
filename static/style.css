@@ -40,3 +40,15 @@ input, button
         font-size: 0.9em;
     }
 }
+.topo-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+}
+
+.topo-logo img {
+    width: 100%;
+    height: auto;
+}
