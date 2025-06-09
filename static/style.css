@@ -66,3 +66,19 @@ button:hover {
         font-size: 0.9em;
     }
 }
+.info {
+    margin-top: 30px;
+    font-size: 0.95em;
+    color: #333;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.info h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #f45d37;
+}
+
