@@ -16,18 +16,39 @@ body {
     max-width: 400px;
     width: 90%;
     text-align: center;
+    box-shadow: 0 0 12px
+    @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    background: #ffffffee;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    margin-top: 280px;
+
+    animation: fadeInUp 0.8s ease forwards;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 10px;
+input {
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-p {
-    color: #222;
-    font-size: 0.95em;
-    margin-bottom: 20px;
+input:focus {
+    border-color: #25d366;
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.4);
+    outline: none;
 }
 
 input, button {
@@ -46,11 +67,12 @@ button {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3 sease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #1ebe5d;
+ transform: scale(1.03);
 }
 
 @media (max-width: 480px) {
