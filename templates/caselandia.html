@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Caselândia - Fidelidade</title>
-    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Caselândia - Capas, Acessórios e Serviços Técnicos</title>
+  <meta name="description" content="Cadastre-se na Caselândia e acompanhe seus serviços e compras! Loja especializada em capas, acessórios e assistência técnica.">
+  <meta name="keywords" content="Caselândia, fidelidade, capas de celular, assistência técnica, loja de acessórios, cadastro">
+  <meta name="author" content="Caselândia">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <link rel="robots" href="{{ url_for('static', filename='robots.txt') }}"> 
+  <meta property="og:title" content="Caselândia - Fidelidade e Assistência Técnica">
+<meta property="og:description" content="Participe do nosso programa de fidelidade. Cadastre-se agora!">
+<meta property="og:image" content="{{ url_for('static', filename='logo_topo.png') }}">
+<meta property="og:url" content="https://caselandiaon.onrender.com">
+<meta property="og:type" content="website">
+ 
 </head>
+
 <body>
     <div class="container">
         <h1>Bem-vindo à Caselândia</h1>
+        <h2>Capas, acessórios e assistência técnica para celular com qualidade</h2>
         <p>Cadastre-se no nosso programa de fidelidade e acompanhe seus serviços!</p>
         <form action="/registrar_fidelidade" method="POST">
   
