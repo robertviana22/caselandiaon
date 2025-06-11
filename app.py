@@ -29,7 +29,7 @@ def registrar_fidelidade():
     mensagem_codificada = urllib.parse.quote(mensagem)
 
     # Redireciona para o WhatsApp com a mensagem codificada
-    return redirect(f"https://wa.me/55799981387077?text={mensagem_codificada}")
+    return redirect(f"https://wa.me/5579991763141?text={mensagem_codificada}")
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
